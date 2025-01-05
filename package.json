@@ -1,0 +1,60 @@
+{
+  "name": "@jenv/cli",
+  "version": "0.1.0",
+  "description": "A cross-platform JDK version management tool",
+  "author": "RingoTangs",
+  "license": "MIT",
+  "homepage": "https://github.com/RingoTangs/jenv#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RingoTangs/jenv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RingoTangs/jenv/issues"
+  },
+  "keywords": [
+    "jdk",
+    "java",
+    "version",
+    "management",
+    "cli",
+    "cross-platform"
+  ],
+  "main": "dist/index.js",
+  "bin": {
+    "jenv": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "build": "rimraf ./dist && rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.0.0",
+    "inquirer": "^12.3.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.12.1",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@rollup/plugin-alias": "^5.1.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^18.19.69",
+    "eslint": "^9.17.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.29.1",
+    "typescript": "^5.7.2"
+  }
+}
