@@ -18,6 +18,12 @@ A cross-platform JDK version management tool that allows you to easily switch be
 
 
 
+>**Please note:** 
+>
+>**jenv does not automatically download JDKs for you. You need to manually download multiple versions of the JDK and place them in the specified directory.**
+
+
+
 ## Installation
 
 ```bash
