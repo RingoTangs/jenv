@@ -1,3 +1,7 @@
+[English](https://github.com/RingoTangs/jenv#readme)
+
+[简体中文](https://github.com/RingoTangs/jenv/blob/master/README_zh.md)
+
 # jenv
 
 A cross-platform JDK version management tool that allows you to easily switch between different JDK versions.
