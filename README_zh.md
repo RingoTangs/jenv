@@ -13,7 +13,7 @@
 ## 安装
 
 ```bash
-npm install -g @jenv/cli
+npm install -g @ringotangs/jenv
 ```
 
 ## 系统要求

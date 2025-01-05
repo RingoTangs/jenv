@@ -1,5 +1,5 @@
 {
-  "name": "@jenv/cli",
+  "name": "@ringotangs/jenv",
   "version": "0.1.0",
   "description": "A cross-platform JDK version management tool",
   "author": "RingoTangs",
