@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A cross-platform JDK version management tool",
   "author": "RingoTangs",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "homepage": "https://github.com/RingoTangs/jenv#readme",
   "repository": {
