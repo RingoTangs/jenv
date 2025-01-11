@@ -36,7 +36,19 @@ export default {
     // babel
     babel({
       babelHelpers: 'bundled',
-      presets: ['@babel/preset-typescript', '@babel/preset-env'], // 处理 TypeScript 和 ES6+ 语法
+      presets: [
+        '@babel/preset-typescript',
+        [
+          '@babel/preset-env',
+          {
+            targets: {
+              node: '16.0',
+            },
+            useBuiltIns: 'usage',
+            corejs: '3.40.0',
+          },
+        ],
+      ], // 处理 TypeScript 和 ES6+ 语法
       extensions: ['.ts'], // 支持的文件扩展名
     }),
   ],

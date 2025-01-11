@@ -36,7 +36,7 @@ export function removeSymbolLink(): void {
       // Windows 上先检查是否是 junction
       const stats = fs.lstatSync(JAVA_HOME_LINK_PATH)
       if (stats.isSymbolicLink() || stats.isDirectory()) {
-        fs.rmSync(JAVA_HOME_LINK_PATH, { force: true })
+        fs.rmSync(JAVA_HOME_LINK_PATH, { recursive: true })
       }
     }
     else {

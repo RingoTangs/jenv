@@ -5,6 +5,8 @@ import { configCommand, initCommand, lsCommand } from '@/commands'
 import { Command } from 'commander'
 import pkg from '../package.json'
 import { useCommand } from './commands/use'
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
 
 const program = new Command()
 

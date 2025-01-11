@@ -47,12 +47,18 @@ importers:
       commander:
         specifier: ^13.0.0
         version: 13.0.0
+      core-js:
+        specifier: '3'
+        version: 3.40.0
       eslint:
         specifier: ^9.17.0
         version: 9.17.0
       inquirer:
         specifier: ^12.3.0
         version: 12.3.0(@types/node@18.19.69)
+      regenerator-runtime:
+        specifier: ^0.14.1
+        version: 0.14.1
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
@@ -1257,6 +1263,9 @@ packages:
 
   core-js-compat@3.39.0:
     resolution: {integrity: sha512-VgEUx3VwlExr5no0tXlBt+silBvhTryPwCXRI2Id1PN8WTKu7MreethvddqOubrYxkFdv/RnYrqlv1sFNAUelw==}
+
+  core-js@3.40.0:
+    resolution: {integrity: sha512-7vsMc/Lty6AGnn7uFpYT56QesI5D2Y/UkgKounk87OP9Z2H9Z8kj6jzcSGAxFmUtDOS0ntK6lbQz+Nsa0Jj6mQ==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -3823,6 +3832,8 @@ snapshots:
   core-js-compat@3.39.0:
     dependencies:
       browserslist: 4.24.3
+
+  core-js@3.40.0: {}
 
   cross-spawn@7.0.6:
     dependencies:
