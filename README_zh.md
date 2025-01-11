@@ -127,13 +127,3 @@ MIT
 ## 作者
 
 RingoTangs
-
-
-
-## 参与贡献
-
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/amazing-feature`)
-3. 提交更改 (`git commit -m 'feat: add amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 提交 Pull Request
