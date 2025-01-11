@@ -50,13 +50,17 @@ function platformTips(javaHomeLinkPath: string): void {
     _console.info('Set environment variables:')
     _console.info(`JAVA_HOME=${javaHomeLinkPath}`)
     _console.info('Add %JAVA_HOME%\\bin to your PATH')
+
+    // 添加重启命令窗口的提示
+    _console.info('\nNote: Please restart your terminal/command prompt to apply the changes.')
   }
   else {
     _console.info('Add to ~/.bashrc or ~/.zshrc:')
     _console.info(`export JAVA_HOME="${javaHomeLinkPath}"`)
     _console.info('export PATH="$JAVA_HOME/bin:$PATH"')
-  }
 
-  // 添加重启命令窗口的提示
-  _console.info('\nNote: Please restart your terminal/command prompt to apply the changes.')
+    // 提示用户刷新环境变量
+    _console.info('\nTo apply the changes run:')
+    _console.info('source ~/.bashrc or ~/.zshrc')
+  }
 }
