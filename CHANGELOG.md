@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.0] - 2024-03-17
+## [0.1.0] - 2025-01-05
 
 ### Added
 
@@ -34,3 +34,9 @@ All notable changes to this project will be documented in this file.
 - 📝 Comprehensive README with installation and usage instructions
 - 🌍 Cross-platform setup guides
 - 💡 Windows-specific instructions for symbolic link permissions 
+
+## [0.1.1] - 2025-01-5
+Package all dependencies into the dist directory, eliminating the need to download additional dependencies during installation.
+
+## [0.1.2] - 2025-01-11
+Compatible with Node 16.20.2, optimized code, and tested on Linux operating system.
