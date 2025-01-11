@@ -34,7 +34,7 @@ npm install -g @ringotangs/jenv
 
 ## Requirements
 
-- Node.js >= 14.0.0
+- Node.js >= 16.0.0
 - Administrator privileges (Windows) or sudo (Linux/MacOS) for creating symbolic links
 
 
