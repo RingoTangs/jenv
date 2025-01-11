@@ -40,3 +40,6 @@ Package all dependencies into the dist directory, eliminating the need to downlo
 
 ## [0.1.2] - 2025-01-11
 Compatible with Node 16.20.2, optimized code, and tested on Linux operating system.
+
+## [0.1.3] - 2025-01-11
+After successfully switching the JDK version, add a user-friendly tips.
