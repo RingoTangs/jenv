@@ -30,7 +30,7 @@ npm install -g @ringotangs/jenv
 
 ## 系统要求
 
-- Node.js >= 16.0.0
+- Node.js >= 16.20.2
 - Windows 需要管理员权限，Linux/MacOS 需要 sudo 权限（用于创建符号链接）
 
 
