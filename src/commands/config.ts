@@ -9,10 +9,10 @@ enum ConfigAction {
 }
 
 export async function configCommand(): Promise<void> {
-  // 检查是否初始化
-  checkInit()
-
   try {
+    // 检查是否初始化
+    checkInit()
+
     // 首先选择操作类型
     const { action } = await inquirer.prompt([
       {
@@ -76,7 +76,7 @@ async function addJDK(): Promise<void> {
     },
   ])
 
-  const config = readConfig()!
+  const config = readConfig()
   config.jdks[answers.version] = answers.path
   writeConfig(config)
 
@@ -88,7 +88,7 @@ async function addJDK(): Promise<void> {
  * 删除 JDK 配置
  */
 async function removeJDK(): Promise<void> {
-  const config = readConfig()!
+  const config = readConfig()
   const jdkList = Object.keys(config.jdks)
 
   if (jdkList.length === 0) {

@@ -4,13 +4,13 @@ import { _console, createWorkDir, existConfigFile, existWorkDir, getConfigFilePa
 export function initCommand(): void {
   const configPath = getConfigFilePath()
 
-  // 检查配置文件是否已存在
-  if (existConfigFile()) {
-    _console.success('✓ jenv is already initialized！')
-    return
-  }
-
   try {
+    // 检查配置文件是否已存在
+    if (existConfigFile()) {
+      _console.success('✓ jenv is already initialized！')
+      return
+    }
+
     // 创建 jenv 工作目录
     if (!existWorkDir()) {
       createWorkDir()

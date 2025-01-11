@@ -3,10 +3,10 @@ import { _console, checkInit, createSymbolLink, readConfig, writeConfig } from '
 import inquirer from 'inquirer'
 
 export async function useCommand(): Promise<void> {
-  checkInit()
-
   try {
-    const config = readConfig()!
+    checkInit()
+
+    const config = readConfig()
     const { jdks } = config
     const jdkList = Object.keys(jdks)
 

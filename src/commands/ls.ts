@@ -1,10 +1,10 @@
 import { _console, checkInit, readConfig } from '@/utils'
 
 export function lsCommand(): void {
-  checkInit()
-
   try {
-    const config = readConfig()!
+    checkInit()
+
+    const config = readConfig()
 
     const { jdks, current } = config
 

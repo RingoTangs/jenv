@@ -20,16 +20,11 @@ export function existConfigFile(): boolean {
 /**
  * 读取配置文件
  */
-export function readConfig(): JenvConfig | undefined {
+export function readConfig(): JenvConfig {
   const configPath = getConfigFilePath()
 
-  try {
-    const content = fs.readFileSync(configPath, 'utf-8')
-    return JSON.parse(content) as JenvConfig
-  }
-  catch (error: any) {
-    throw new Error(`Failed to read config file: ${error.message}`)
-  }
+  const content = fs.readFileSync(configPath, 'utf-8')
+  return JSON.parse(content) as JenvConfig
 }
 
 /**
@@ -37,15 +32,10 @@ export function readConfig(): JenvConfig | undefined {
  */
 export function writeConfig(config: JenvConfig): void {
   const configPath = getConfigFilePath()
-
-  try {
-    fs.writeFileSync(
-      configPath,
-      JSON.stringify(config, null, 2),
-      'utf-8',
-    )
-  }
-  catch (error: any) {
-    throw new Error(`Failed to write config file: ${error.message}`)
-  }
+  
+  fs.writeFileSync(
+    configPath,
+    JSON.stringify(config, null, 2),
+    'utf-8',
+  )
 }
