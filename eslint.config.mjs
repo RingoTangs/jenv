@@ -7,5 +7,7 @@ export default antfu({
   rules: {
     'no-console': ['off'],
     'unused-imports/no-unused-imports': ['error'],
+    'antfu/top-level-function': ['off'],
+    'ts/explicit-function-return-type': ['warn'],
   },
 })
